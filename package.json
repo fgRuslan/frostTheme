@@ -1,0 +1,29 @@
+{
+  "name": "frosttheme",
+  "version": "0.0.1",
+  "description": "Theme for websites made using scss",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgRuslan/frostTheme.git"
+  },
+  "keywords": [
+    "frost",
+    "theme",
+    "website"
+  ],
+  "author": "Ruslan Isaev <Ubijca16@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fgRuslan/frostTheme/issues"
+  },
+  "homepage": "https://github.com/fgRuslan/frostTheme#readme"
+}
