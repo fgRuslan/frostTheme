@@ -1,8 +1,17 @@
 $button-border-color: #26a300;
 $button-background-color: rgba(255, 255, 255, 0.5);
-$transition-time: 0,3s;
+$transition-time: 0.3s;
+$rounded-button-border-radius: 10px;
 
-.button {
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.framedButton {
 	text-align: center;
 	border: 3px solid $button-border-color;
 	padding: 10px;
@@ -11,8 +20,18 @@ $transition-time: 0,3s;
 	transition: color $transition-time, background-color $transition-time, border-color $transition-time;
 }
 
-.button:hover{
+.framedButton:hover{
 	background-color: rgba(255,255,255, 0.8);
+}
+
+
+.roundedButton {
+	@extend .framedButton;
+	@include border-radius($rounded-button-border-radius);
+}
+
+.roundedButton:hover{
+	@extend .framedButton:hover;
 }
 
 a {
