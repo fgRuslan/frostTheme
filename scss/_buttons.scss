@@ -1,8 +1,7 @@
-$button-border-color: #26a300;
-$button-background-color: rgba(255, 255, 255, 0.5);
+$button-border-color: #fff;
+$button-background-color: 0;
 $transition-time: 0.3s;
 $rounded-button-border-radius: 10px;
-
 
 @mixin border-radius($radius){
 	-webkit-border-radius: $radius;
@@ -21,7 +20,7 @@ $rounded-button-border-radius: 10px;
 }
 
 .framedButton:hover{
-	background-color: rgba(255,255,255, 0.8);
+	background-color: rgba(255,255,255, 0.3);
 }
 
 
@@ -34,6 +33,7 @@ $rounded-button-border-radius: 10px;
 	@extend .framedButton:hover;
 }
 
-a {
+a a:hover a:active a:visited {
+	color: $button-border-color; //Button with white border will have white text
 	text-decoration: none;
 }
