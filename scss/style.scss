@@ -1,0 +1,15 @@
+@import 'buttons';
+
+$image-margin: 50px;
+$image-width: 65%;
+
+body {
+	background-color: #000;
+}
+
+img {
+	display: block;
+	margin: $image-margin;
+	width: $image-width;
+	border: 3px solid #fff;
+}
