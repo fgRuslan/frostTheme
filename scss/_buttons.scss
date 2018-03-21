@@ -19,19 +19,13 @@ $rounded-button-border-radius: 10px;
 	color: $button-border-color;
 	font-weight: bold;
 	text-decoration: none;
-}
-.framedButton:hover{
-	background-color: rgba(255,255,255, 0.3);
+	&:hover {background-color: rgba(255,255,255, 0.3);}
 }
 
 
 .roundedButton {
 	@extend .framedButton;
 	@include border-radius($rounded-button-border-radius);
-}
-
-.roundedButton:hover{
-	@extend .framedButton:hover;
 }
 
 a a:hover a:active a:visited {
