@@ -18,6 +18,7 @@ $rounded-button-border-radius: 10px;
 	transition: color $transition-time, background-color $transition-time, border-color $transition-time;
 	color: $button-border-color;
 	font-weight: bold;
+	text-decoration: none;
 }
 .framedButton:hover{
 	background-color: rgba(255,255,255, 0.3);
