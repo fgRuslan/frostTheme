@@ -19,9 +19,13 @@ $rounded-button-border-radius: 10px;
 	color: $button-border-color;
 	font-weight: bold;
 	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
 	&:hover {background-color: rgba(255,255,255, 0.3);}
 }
-
+.framedButton + .framedButton{
+	margin-top:1rem;
+}
 
 .roundedButton {
 	@extend .framedButton;
